@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
   accepts_nested_attributes_for :categories
   has_many :comments
   has_many :users, through: :comments
-
+  accepts_nested_attributes_for :comments
 
 end
